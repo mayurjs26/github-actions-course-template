@@ -12,5 +12,5 @@ jobs:
       uses: zaproxy/action-baseline@v0.3.0
       with:
         target: "https://www.zaproxy.org/"
-        rules_file_name: './zap-rules.tsv'
+        rules_file_name: '${{ github.workspace }}/zap-rules.tsv'
         cmd_options: '-a'
