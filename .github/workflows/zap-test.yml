@@ -8,6 +8,7 @@ jobs:
     steps:     
     - name: Checkout
       uses: actions/checkout@v2 
+    - run: echo '${{ github.workspace }}/zap-rules.tsv'
     - name: OWASP ZAP Baseline Scan
       uses: zaproxy/action-baseline@v0.3.0
       with:
